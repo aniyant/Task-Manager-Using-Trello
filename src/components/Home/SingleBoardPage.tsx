@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, Navigate, useParams } from 'react-router-dom';
 import {
     Box,
     Heading,
@@ -165,15 +165,16 @@ const SingleBoardPage: React.FC = () => {
         <Box p={5}>
             <VStack spacing={5} align="stretch">
                 {/* Board name and add list input */}
-                <Heading as="h1" size="xl" mb={5} color="GrayText" textAlign="center">{board?.name}</Heading>
+                <Heading as="h1" size="xl" color="GrayText" textAlign="center">{board?.name}</Heading>
                 <HStack spacing={3} width={900} mx="auto">
+                <Link to='/'><Button width={150} color="teal">All Boards</Button></Link>
                     <Input
                         type="text"
                         value={newListName}
                         onChange={(e) => setNewListName(e.target.value)}
                         placeholder="New List Name"
                     />
-                    <Button onClick={handleAddList} colorScheme="teal">Add List</Button>
+                    <Button onClick={handleAddList} colorScheme="teal" width={150}>Add List</Button>
                 </HStack>
 
                 {/* Error message */}
