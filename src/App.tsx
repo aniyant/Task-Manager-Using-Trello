@@ -7,7 +7,7 @@ import { AuthProvider } from './components/Contexts/AuthContext';
 import SingleBoardPage from './components/Home/SingleBoardPage';
 
 
-
+``
 const App: React.FC = () => {
     return (
         <AuthProvider>

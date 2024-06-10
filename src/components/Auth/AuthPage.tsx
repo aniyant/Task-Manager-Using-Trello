@@ -30,9 +30,12 @@ const AuthPage: React.FC = () => {
                 </VStack>
             ) : (
                 <VStack spacing={5}>
-                    <Heading color={'GrayText'}>Login to Your Trello Account</Heading>
+                    <Heading as="h1" size="xl" mb={5} color="GrayText">
+                    Welcome To Trello Task Management
+                    </Heading>
+                    {/* <Heading color={'GrayText'} width={200}></Heading> */}
                     <Text color="gray.500">
-                        Please username:'admin' and password:'admin'
+                        Please use username:'admin' and password:'admin'
                     </Text>
                     <Stack spacing={3} width="300px" margin="auto">
                         <Input
@@ -50,7 +53,7 @@ const AuthPage: React.FC = () => {
                             size="md"
                         />
                         <Button onClick={handleLoginClick} colorScheme="teal">
-                            Login with Trello
+                            Login
                         </Button>
                     </Stack>
                 </VStack>
