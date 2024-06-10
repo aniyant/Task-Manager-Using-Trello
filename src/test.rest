@@ -1,0 +1,4 @@
+# curl 'https://api.trello.com/1/members/me/boards?key=64b95b2b75a26de3e5a4d27fcfe7fa16&token=ATTAa28c780800bcf53a231295036186497c9c7273fee0ae90d89908358b26f0aa770727A720'
+
+curl --request POST \
+  --url 'https://api.trello.com/1/boards/?name=Construct Project&key=64b95b2b75a26de3e5a4d27fcfe7fa16&token=ATTAa28c780800bcf53a231295036186497c9c7273fee0ae90d89908358b26f0aa770727A720'
